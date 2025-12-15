@@ -1,0 +1,46 @@
+using UnityEngine;
+using System;
+
+namespace Systems
+{
+    public class DNASystem : MonoBehaviour
+    {
+        public static DNASystem Instance { get; private set; }
+        
+        public int TotalDNA { get; private set; }
+        
+        public event Action<int> OnDNAChanged;
+
+        private void Awake()
+        {
+            if (Instance == null) 
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else Destroy(gameObject);
+            
+            // For now, simple load. Will hook into SaveSystem later.
+            TotalDNA = PlayerPrefs.GetInt("TotalDNA", 0);
+        }
+
+        public void AddDNA(int amount)
+        {
+            TotalDNA += amount;
+            PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+            OnDNAChanged?.Invoke(TotalDNA);
+        }
+
+        public bool SpendDNA(int amount)
+        {
+            if (TotalDNA >= amount)
+            {
+                TotalDNA -= amount;
+                PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+                OnDNAChanged?.Invoke(TotalDNA);
+                return true;
+            }
+            return false;
+        }
+    }
+}
