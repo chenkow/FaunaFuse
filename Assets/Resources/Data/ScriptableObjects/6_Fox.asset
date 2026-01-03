@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 6_Fox
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 6
-  animalName: Fox
+  animalName: Frog
   icon: {fileID: 3788378571362930877, guid: 050e8394bfde3ec479de04aa3a959476, type: 3}
+  rarity: 0
   dnaReward: 64
-  trivia: A level 6 friend.
+  trivia: Frogs drink water through their skin via osmosis rather than their mouths.
+    They use their eyeballs to help swallow food by retracting them into their head
+    to push food down. Their tongues can snap out at prey faster than the blink of
+    an eye.

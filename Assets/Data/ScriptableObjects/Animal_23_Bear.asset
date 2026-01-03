@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 23
   animalName: Bear
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 8388608
-  trivia: This is a level 23 Bear.
+  trivia: During hibernation, bears do not urinate; their bodies recycle waste into
+    protein to maintain muscle. Despite their bulk, they can sprint faster than Usain
+    Bolt (up to 55 km/h). Polar bears can smell a seal from 30 km away.

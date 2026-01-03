@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 17_Quokka
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 17
-  animalName: Quokka
+  animalName: Owl
   icon: {fileID: 566619275676436658, guid: c8b900920d3993946b3415bd9b2ef2f2, type: 3}
+  rarity: 0
   dnaReward: 131072
-  trivia: A level 17 friend.
+  trivia: Owls fly silently thanks to specialized fringed feathers that break up
+    turbulence. Their eyes are tube-shaped and fixed in place, so they must rotate
+    their heads up to 270 degrees to look around. Their asymmetrical ears allow 3D
+    audio triangulation.

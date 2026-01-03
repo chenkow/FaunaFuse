@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 2
   animalName: Fish
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 4
-  trivia: This is a level 2 Fish.
+  trivia: Goldfish do not have a 3-second memory; they can remember things for months
+    and recognize their owners. They don't have eyelids, so they sleep with their
+    eyes open by staying still. In proper conditions, they can live up to 40 years,
+    making them one of the longest-lived aquarium pets.

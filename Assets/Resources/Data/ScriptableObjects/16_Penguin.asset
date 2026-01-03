@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 16_Penguin
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 16
-  animalName: Penguin
+  animalName: Cat
   icon: {fileID: -548379016396011055, guid: 56f2b432ef043f64c941c5eeeed41719, type: 3}
+  rarity: 0
   dnaReward: 65536
-  trivia: A level 16 friend.
+  trivia: A cat's whiskers are navigation tools that detect air currents and width
+    changes. Purring isn't just for happiness; the frequency promotes bone density
+    and healing. Adult cats only meow to communicate with humans, not other cats.

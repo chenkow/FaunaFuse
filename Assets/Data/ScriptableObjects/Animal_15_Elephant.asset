@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 15
   animalName: Elephant
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 32768
-  trivia: This is a level 15 Elephant.
+  trivia: Elephants have over 40,000 muscles in their trunks, allowing them to pick
+    up a single peanut. Their large ears act as radiators to cool their blood. They
+    are known for their incredible memory and deep social bonds, even mourning their
+    dead.

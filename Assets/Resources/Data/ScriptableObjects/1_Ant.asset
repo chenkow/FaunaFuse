@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 1_Ant
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 1
-  animalName: Ant
+  animalName: Butterfly
   icon: {fileID: -1992902125623819062, guid: f93e5abdeea545746ab1f7e8dbe92a31, type: 3}
+  rarity: 0
   dnaReward: 2
-  trivia: A level 1 friend.
+  trivia: Butterflies taste food with their feet to find suitable plants for eggs.
+    Their compound eyes can see ultraviolet (UV) light invisible to humans. Their
+    wings are actually transparent; the colors come from microscopic scales reflecting
+    light. Monarchs undertake a multi-generational migration of over 4,000 km.

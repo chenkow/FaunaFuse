@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 7
   animalName: Snake
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 128
-  trivia: This is a level 7 Snake.
+  trivia: Cobras spread their neck ribs to form a hood as a threat display. King
+    Cobras are the only snakes that build nests for their eggs. Some species can
+    spit venom accurately into the eyes of a threat, causing temporary blindness.

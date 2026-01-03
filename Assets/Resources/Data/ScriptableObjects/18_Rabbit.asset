@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 18_Rabbit
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 18
-  animalName: Rabbit
+  animalName: Fox
   icon: {fileID: 1206399730981200360, guid: 2f7d884321583484c894594744020a28, type: 3}
+  rarity: 0
   dnaReward: 262144
-  trivia: A level 18 friend.
+  trivia: Foxes use the Earth's magnetic field to judge distance when pouncing on
+    prey in snow. Their bushy tails aid balance and act as a warm blanket in winter.
+    They share traits with cats, such as retractable claws and vertical pupils.

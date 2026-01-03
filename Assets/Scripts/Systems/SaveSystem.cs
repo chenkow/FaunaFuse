@@ -5,14 +5,31 @@ using System.IO;
 namespace Systems
 {
     [System.Serializable]
+    public struct SavedUpgrade
+    {
+        public Core.UpgradeType type;
+        public int level;
+    }
+
+    [System.Serializable]
+    public struct ActiveUpgradeTimer
+    {
+        public Core.UpgradeType type;
+        public string startTime; // DateTime.ToBinary().ToString()
+        public int targetLevel;
+    }
+
+    [System.Serializable]
     public class GameSaveData
     {
         public int dna;
+        public int diamonds;
         public int hearts;
         public string nextRefillTime;
         public List<int> unlockedAnimals = new List<int>();
-        public List<int> upgradeLevels = new List<int>(); // Corresponding to defined upgrades order or ID
-        // Or specific dictionary approach serialized
+        public List<int> upgradeLevels = new List<int>(); // Deprecated (Legacy)
+        public List<SavedUpgrade> savedUpgrades = new List<SavedUpgrade>(); // Robust
+        public List<ActiveUpgradeTimer> activeUpgradeTimers = new List<ActiveUpgradeTimer>();
     }
 
     public class SaveSystem : MonoBehaviour
@@ -40,6 +57,7 @@ namespace Systems
              
              // Sync from systems
              if (DNASystem.Instance) Data.dna = DNASystem.Instance.TotalDNA;
+             if (DiamondSystem.Instance) Data.diamonds = DiamondSystem.Instance.TotalDiamonds;
              if (HeartSystem.Instance) 
              {
                  Data.hearts = HeartSystem.Instance.CurrentHearts;
@@ -64,6 +82,7 @@ namespace Systems
                  Data = new GameSaveData();
                  Data.hearts = 5;
                  Data.dna = 0;
+                 Data.diamonds = 10; // Starting diamonds for testing
              }
              
              // Sync back is tricky if systems awake AFTER SaveSystem.
@@ -78,6 +97,14 @@ namespace Systems
         private void OnApplicationQuit()
         {
             Save();
+        }
+        public void ClearSave()
+        {
+             if (File.Exists(path))
+             {
+                 File.Delete(path);
+             }
+             Data = new GameSaveData();
         }
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 21_Urchin
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 21
-  animalName: Urchin
+  animalName: Baligi
   icon: {fileID: 4457016022402660731, guid: 00da40c8ad007af4b86322987d5bb514, type: 3}
   dnaReward: 2097152
   trivia: A level 21 friend.

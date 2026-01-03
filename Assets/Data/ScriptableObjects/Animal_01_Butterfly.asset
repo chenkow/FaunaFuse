@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 1
   animalName: Butterfly
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 2
-  trivia: This is a level 1 Butterfly.
+  trivia: Butterflies taste food with their feet to find suitable plants for eggs.
+    Their compound eyes can see ultraviolet (UV) light invisible to humans. Their
+    wings are actually transparent; the colors come from microscopic scales reflecting
+    light. Monarchs undertake a multi-generational migration of over 4,000 km.

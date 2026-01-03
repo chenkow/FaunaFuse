@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 21
   animalName: Dolphin
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 2097152
-  trivia: This is a level 21 Dolphin.
+  trivia: Dolphins shut down only half their brain at a time to sleep, staying alert
+    for breathing and danger. They have unique 'signature whistles' that function
+    like names. They use echolocation (biological sonar) to 'see' with sound.

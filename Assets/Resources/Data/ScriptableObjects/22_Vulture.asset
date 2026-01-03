@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 22_Vulture
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 22
-  animalName: Vulture
+  animalName: Wolf
   icon: {fileID: 3086170844178294494, guid: 923d99ddf791db94e9bb80a040607ef7, type: 3}
+  rarity: 0
   dnaReward: 4194304
-  trivia: A level 22 friend.
+  trivia: Wolves howl to assemble the pack and define territory; the harmonics creating
+    an illusion of a larger pack. They are endurance hunters, traveling 50+ miles
+    a day. All wolf pups are born with blue eyes which change color later.

@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 25
   animalName: Lion
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 33554432
-  trivia: This is a level 25 Lion.
+  trivia: Lions live in savannas, not jungles. Females do 90% of the hunting, while
+    males protect the pride's territory. A lion's roar is the loudest of any big
+    cat and can be heard from 8 kilometers (5 miles) away.

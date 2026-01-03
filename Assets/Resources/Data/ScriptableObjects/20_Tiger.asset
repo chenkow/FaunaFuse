@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 20_Tiger
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 20
-  animalName: Tiger
+  animalName: Dog
   icon: {fileID: -2721387835547564792, guid: ebdce7e9b2b9cce4b85b0b4cb163098a, type: 3}
+  rarity: 0
   dnaReward: 1048576
-  trivia: A level 20 friend.
+  trivia: A dog's nose print is as unique as a human fingerprint. Their sense of
+    smell is 10,000-100,000 times more sensitive than ours, smelling in '3D'. The
+    'puppy dog eyes' look is an evolutionary adaptation to communicate with humans.

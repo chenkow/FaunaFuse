@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 7_Goat
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 7
-  animalName: Goat
+  animalName: Snake
   icon: {fileID: -3693420206844051026, guid: ba9aed6d492cb19448a26b98d2e3306f, type: 3}
+  rarity: 0
   dnaReward: 128
-  trivia: A level 7 friend.
+  trivia: Cobras spread their neck ribs to form a hood as a threat display. King
+    Cobras are the only snakes that build nests for their eggs. Some species can
+    spit venom accurately into the eyes of a threat, causing temporary blindness.

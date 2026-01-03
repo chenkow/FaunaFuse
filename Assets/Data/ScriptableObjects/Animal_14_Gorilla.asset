@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 14
   animalName: Gorilla
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 16384
-  trivia: This is a level 14 Gorilla.
+  trivia: Gorillas share about 98% of their DNA with humans. Mature males develop
+    silver hair on their backs, hence 'Silverbacks'. They express emotions and intentions
+    through over 25 distinct vocalizations and the iconic chest-beating display.

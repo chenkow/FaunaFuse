@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 5_Eagle
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 5
-  animalName: Eagle
+  animalName: Bird
   icon: {fileID: 8032330116615084439, guid: 4c9f77a0560254543a2391464e5779d3, type: 3}
+  rarity: 0
   dnaReward: 32
-  trivia: A level 5 friend.
+  trivia: 'Budgies can mimic human speech and hold the record for the largest vocabulary
+    (over 1,700 words) of any bird. The color of the cere (nose area) usually indicates
+    their gender: blue for males, brown/white for females. They are highly social
+    and live in large flocks.'

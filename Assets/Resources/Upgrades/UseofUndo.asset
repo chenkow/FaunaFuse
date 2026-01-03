@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37abb4d42c78ed4dac5e24022efd791, type: 3}
+  m_Name: UseofUndo
+  m_EditorClassIdentifier: Assembly-CSharp::Core.UpgradeSO
+  type: 2
+  upgradeName: Use of Undo
+  description: Increases max undo charges.
+  icon: {fileID: 0}
+  maxLevel: 5
+  baseCost: 150
+  costMultiplier: 2
+  effectValues:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  upgradeTimesPerLevel: []
+  baseUpgradeTime: 900
+  upgradeTimeMultiplier: 2
+  instantFinishCostPer30Sec: 1

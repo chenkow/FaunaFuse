@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 9
   animalName: Turtle
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 512
-  trivia: This is a level 9 Turtle.
+  trivia: Sea turtles use the Earth's magnetic field to navigate thousands of miles
+    back to their birth beach. Unlike cartoons, turtles cannot leave their shells;
+    the shell is fused to their spine. Some species can absorb oxygen through their
+    cloaca (butt) to stay submerged longer.

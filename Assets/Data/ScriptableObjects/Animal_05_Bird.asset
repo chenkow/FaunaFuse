@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 5
   animalName: Bird
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 32
-  trivia: This is a level 5 Bird.
+  trivia: 'Budgies can mimic human speech and hold the record for the largest vocabulary
+    (over 1,700 words) of any bird. The color of the cere (nose area) usually indicates
+    their gender: blue for males, brown/white for females. They are highly social
+    and live in large flocks.'

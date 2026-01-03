@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 24
   animalName: Eagle
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 16777216
-  trivia: This is a level 24 Eagle.
+  trivia: Eagles have vision 4-8 times sharper than humans, spotting prey from miles
+    away. They build the largest tree nests of any bird, some weighing over a ton.
+    They have a second eyelid (nictitating membrane) to protect their eyes.

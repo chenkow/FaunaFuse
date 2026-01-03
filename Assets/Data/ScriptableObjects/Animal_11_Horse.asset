@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 11
   animalName: Horse
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 2048
-  trivia: This is a level 11 Horse.
+  trivia: Horses can sleep standing up to be ready to flee predators, thanks to a
+    'stay apparatus' in their legs. They have near 360-degree vision. Unlike humans,
+    horses physically cannot vomit due to a strong valve in their stomach.

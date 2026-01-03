@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 18
   animalName: Fox
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 262144
-  trivia: This is a level 18 Fox.
+  trivia: Foxes use the Earth's magnetic field to judge distance when pouncing on
+    prey in snow. Their bushy tails aid balance and act as a warm blanket in winter.
+    They share traits with cats, such as retractable claws and vertical pupils.

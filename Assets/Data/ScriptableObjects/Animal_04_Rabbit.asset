@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 4
   animalName: Rabbit
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 16
-  trivia: This is a level 4 Rabbit.
+  trivia: Rabbits eat their own droppings (cecotropes) to absorb missed nutrients.
+    They have panoramic vision to spot predators but have a blind spot right in front
+    of their nose. When sensing danger, they thump their powerful hind legs on the
+    ground to warn others.

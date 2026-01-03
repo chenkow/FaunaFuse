@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 3
   animalName: Squirrel
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 8
-  trivia: This is a level 3 Squirrel.
+  trivia: Squirrels forget where they bury millions of nuts, accidentally planting
+    countless trees. They can survive falls from almost any height by using their
+    tail for balance and air resistance. They also pretend to bury nuts to fool thieves
+    watching them.

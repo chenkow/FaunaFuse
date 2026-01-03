@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 12
   animalName: Deer
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 4096
-  trivia: This is a level 12 Deer.
+  trivia: Antlers are the fastest-growing bone tissue in the world. While herbivores,
+    deer have been seen chewing on bones for calcium. A buck's antler size is a strong
+    indicator of its health and genetic quality to potential mates.

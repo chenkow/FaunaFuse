@@ -21,13 +21,24 @@ namespace Systems
             else Destroy(gameObject);
             
             // For now, simple load. Will hook into SaveSystem later.
-            TotalDNA = PlayerPrefs.GetInt("TotalDNA", 0);
+            // TotalDNA = PlayerPrefs.GetInt("TotalDNA", 0); 
+            // Better: Let Start handle load from SaveSystem
+        }
+
+        private void Start()
+        {
+            if (SaveSystem.Instance != null && SaveSystem.Instance.Data != null)
+            {
+                TotalDNA = SaveSystem.Instance.Data.dna;
+                OnDNAChanged?.Invoke(TotalDNA);
+            }
         }
 
         public void AddDNA(int amount)
         {
             TotalDNA += amount;
-            PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+            // PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+            SaveSystem.Instance?.Save();
             OnDNAChanged?.Invoke(TotalDNA);
         }
 
@@ -36,7 +47,8 @@ namespace Systems
             if (TotalDNA >= amount)
             {
                 TotalDNA -= amount;
-                PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+                // PlayerPrefs.SetInt("TotalDNA", TotalDNA);
+                SaveSystem.Instance?.Save();
                 OnDNAChanged?.Invoke(TotalDNA);
                 return true;
             }

@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 9_Iguana
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 9
-  animalName: Iguana
+  animalName: Turtle
   icon: {fileID: -5933438290522597442, guid: e74d6bd1ca1de9746a64d99c3a212a6a, type: 3}
+  rarity: 0
   dnaReward: 512
-  trivia: A level 9 friend.
+  trivia: Sea turtles use the Earth's magnetic field to navigate thousands of miles
+    back to their birth beach. Unlike cartoons, turtles cannot leave their shells;
+    the shell is fused to their spine. Some species can absorb oxygen through their
+    cloaca (butt) to stay submerged longer.

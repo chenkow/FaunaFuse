@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 16
   animalName: Cat
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 65536
-  trivia: This is a level 16 Cat.
+  trivia: A cat's whiskers are navigation tools that detect air currents and width
+    changes. Purring isn't just for happiness; the frequency promotes bone density
+    and healing. Adult cats only meow to communicate with humans, not other cats.

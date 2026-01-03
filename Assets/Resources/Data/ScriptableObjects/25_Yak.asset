@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 25_Yak
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 25
-  animalName: Yak
+  animalName: Lion
   icon: {fileID: -3657503694398394194, guid: bad7406350f9d3343b6fd0833d18d5c6, type: 3}
+  rarity: 0
   dnaReward: 33554432
-  trivia: A level 25 friend.
+  trivia: Lions live in savannas, not jungles. Females do 90% of the hunting, while
+    males protect the pride's territory. A lion's roar is the loudest of any big
+    cat and can be heard from 8 kilometers (5 miles) away.

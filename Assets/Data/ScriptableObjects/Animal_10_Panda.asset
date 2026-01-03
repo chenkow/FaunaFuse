@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 10
   animalName: Panda
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 1024
-  trivia: This is a level 10 Panda.
+  trivia: Pandas have a digestive system designed for meat, yet they eat 99% bamboo,
+    requiring them to eat up to 38kg daily. They have a 'false thumb' (a modified
+    wrist bone) to help grasp bamboo stalks. Newborns are 1/900th the size of their
+    mother.

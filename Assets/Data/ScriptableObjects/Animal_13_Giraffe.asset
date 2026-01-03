@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 13
   animalName: Giraffe
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 8192
-  trivia: This is a level 13 Giraffe.
+  trivia: Giraffes have the same number of neck vertebrae as humans (seven), they
+    are just huge. Their tongues are 45-50cm long and dark purple to prevent sunburn
+    while eating. They have incredibly high blood pressure to pump blood up to their
+    heads.

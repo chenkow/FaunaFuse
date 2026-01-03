@@ -15,5 +15,9 @@ MonoBehaviour:
   level: 19
   animalName: Pig
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 524288
-  trivia: This is a level 19 Pig.
+  trivia: Pigs are highly intelligent, outperforming dogs in some cognitive tests.
+    They are actually very clean; they wallow in mud only to cool down (no sweat
+    glands) and for sun protection. Their squeals can be louder than a jet engine
+    (115 dB).

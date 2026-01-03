@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 24_Xerus
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 24
-  animalName: Xerus
+  animalName: Eagle
   icon: {fileID: 3963139345742233974, guid: 990008447dff2c04a9af514acbf059f0, type: 3}
+  rarity: 0
   dnaReward: 16777216
-  trivia: A level 24 friend.
+  trivia: Eagles have vision 4-8 times sharper than humans, spotting prey from miles
+    away. They build the largest tree nests of any bird, some weighing over a ton.
+    They have a second eyelid (nictitating membrane) to protect their eyes.

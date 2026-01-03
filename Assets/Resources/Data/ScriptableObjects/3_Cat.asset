@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 3_Cat
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 3
-  animalName: Cat
+  animalName: Squirrel
   icon: {fileID: -5742065336863455072, guid: b9b5605abaab4a146b4325043064c28a, type: 3}
+  rarity: 0
   dnaReward: 8
-  trivia: A level 3 friend.
+  trivia: Squirrels forget where they bury millions of nuts, accidentally planting
+    countless trees. They can survive falls from almost any height by using their
+    tail for balance and air resistance. They also pretend to bury nuts to fool thieves
+    watching them.

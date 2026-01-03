@@ -8,12 +8,28 @@ namespace Systems
         public static HeartSystem Instance { get; private set; }
 
         public const int MAX_HEARTS = 5;
-        public const float REFILL_TIME_MINUTES = 30f;
+        public const float BASE_REFILL_TIME_MINUTES = 30f;
         private const string PREF_HEARTS = "Hearts_Count";
         private const string PREF_NEXT_REFILL = "Hearts_NextRefill";
 
         public int CurrentHearts { get; private set; }
         public DateTime NextRefillTime { get; private set; }
+        
+        /// <summary>
+        /// Gets the current refill time in minutes, accounting for Heart Recovery upgrade.
+        /// Formula: 30 - upgradeLevel (minimum 5 minutes)
+        /// </summary>
+        public float GetRefillTimeMinutes()
+        {
+            int upgradeLevel = 0;
+            if (LabSystem.Instance != null)
+            {
+                upgradeLevel = LabSystem.Instance.GetUpgradeLevel(Core.UpgradeType.HeartRefill);
+            }
+            // Formula: 30 - level, minimum 5 minutes
+            float refillTime = BASE_REFILL_TIME_MINUTES - upgradeLevel;
+            return Mathf.Max(refillTime, 5f);
+        }
         
         public event Action OnHeartChanged;
 
@@ -44,11 +60,9 @@ namespace Systems
                     {
                         // If we added a heart but still not full, reset timer relative to when it SHOULD have finished, 
                         // or just now for simplicity in drift prevention? 
-                        // Ideally: NextRefillTime += 30mins
-                        // But if offline for days, correct validation needed.
-                        // For loop in Update: just add 30 mins to the *previous* target.
-                        NextRefillTime = NextRefillTime.AddMinutes(REFILL_TIME_MINUTES);
-                        if (NextRefillTime < DateTime.Now) NextRefillTime = DateTime.Now.AddMinutes(REFILL_TIME_MINUTES); // Catchup safety
+                        // Use dynamic refill time based on upgrade level
+                        NextRefillTime = NextRefillTime.AddMinutes(GetRefillTimeMinutes());
+                        if (NextRefillTime < DateTime.Now) NextRefillTime = DateTime.Now.AddMinutes(GetRefillTimeMinutes()); // Catchup safety
                         SaveHearts();
                     }
                 }
@@ -62,8 +76,8 @@ namespace Systems
                 CurrentHearts--;
                 if (CurrentHearts == MAX_HEARTS - 1)
                 {
-                    // Was full, now 4. Start timer.
-                    NextRefillTime = DateTime.Now.AddMinutes(REFILL_TIME_MINUTES);
+                    // Was full, now 4. Start timer with dynamic refill time.
+                    NextRefillTime = DateTime.Now.AddMinutes(GetRefillTimeMinutes());
                 }
                 SaveHearts();
                 OnHeartChanged?.Invoke();
@@ -109,11 +123,12 @@ namespace Systems
                 long temp = Convert.ToInt64(timeStr);
                 NextRefillTime = DateTime.FromBinary(temp);
 
-                // Offline Calc
+                // Offline Calc - use current refill time for calculation
+                float refillMinutes = GetRefillTimeMinutes();
                 while (CurrentHearts < MAX_HEARTS && DateTime.Now >= NextRefillTime)
                 {
                     CurrentHearts++;
-                    NextRefillTime = NextRefillTime.AddMinutes(REFILL_TIME_MINUTES);
+                    NextRefillTime = NextRefillTime.AddMinutes(refillMinutes);
                 }
                 
                 // If we filled up, cap it.
@@ -124,7 +139,7 @@ namespace Systems
                 else
                 {
                      // Still needs charging, verify timer isn't in past
-                     if (NextRefillTime < DateTime.Now) NextRefillTime = DateTime.Now.AddMinutes(REFILL_TIME_MINUTES);
+                     if (NextRefillTime < DateTime.Now) NextRefillTime = DateTime.Now.AddMinutes(GetRefillTimeMinutes());
                 }
                 SaveHearts();
             }

@@ -38,6 +38,9 @@ namespace UI
             if(gameplayView) ShowView(gameplayView);
         }
 
+        [Header("World Objects")]
+        public GameObject mainBoard; // The 2048 Grid (World Space)
+
         public void ShowView(GameObject viewToShow)
         {
             if(gameplayView) gameplayView.SetActive(false);
@@ -47,6 +50,15 @@ namespace UI
             if(leaderboardView) leaderboardView.SetActive(false);
             
             if(viewToShow) viewToShow.SetActive(true);
+
+            // Special handling for Board (Only show if GameplayView is active)
+            if(mainBoard) mainBoard.SetActive(viewToShow == gameplayView);
+            
+            // Toggle Input
+            if(Core.BoardManager.Instance) 
+            {
+                Core.BoardManager.Instance.IsInputActive = (viewToShow == gameplayView);
+            }
         }
     }
 }

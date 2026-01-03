@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: 11_Kangaroo
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 11
-  animalName: Kangaroo
+  animalName: Horse
   icon: {fileID: 7386630469556108798, guid: 71a962be4a86a344a849a09d8991dac4, type: 3}
+  rarity: 0
   dnaReward: 2048
-  trivia: A level 11 friend.
+  trivia: Horses can sleep standing up to be ready to flee predators, thanks to a
+    'stay apparatus' in their legs. They have near 360-degree vision. Unlike humans,
+    horses physically cannot vomit due to a strong valve in their stomach.

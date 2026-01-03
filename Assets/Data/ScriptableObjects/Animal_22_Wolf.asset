@@ -15,5 +15,8 @@ MonoBehaviour:
   level: 22
   animalName: Wolf
   icon: {fileID: 0}
+  rarity: 0
   dnaReward: 4194304
-  trivia: This is a level 22 Wolf.
+  trivia: Wolves howl to assemble the pack and define territory; the harmonics creating
+    an illusion of a larger pack. They are endurance hunters, traveling 50+ miles
+    a day. All wolf pups are born with blue eyes which change color later.
