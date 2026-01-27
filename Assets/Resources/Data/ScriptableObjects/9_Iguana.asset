@@ -21,3 +21,10 @@ MonoBehaviour:
     back to their birth beach. Unlike cartoons, turtles cannot leave their shells;
     the shell is fused to their spine. Some species can absorb oxygen through their
     cloaca (butt) to stay submerged longer.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

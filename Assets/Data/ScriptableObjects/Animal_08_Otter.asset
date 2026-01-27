@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 8
   animalName: Otter
-  icon: {fileID: 0}
+  icon: {fileID: 4179285565014062963, guid: 06350ca482fe1624b84708199dc913ff, type: 3}
   rarity: 0
   dnaReward: 256
   trivia: Sea otters hold hands while sleeping to keep from drifting apart. They
     have the densest fur of any animal (up to 1 million hairs per sq inch) to stay
     warm. They are one of the few animals that use tools, using rocks to crack open
     clams.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

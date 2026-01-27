@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 16
   animalName: Cat
-  icon: {fileID: 0}
+  icon: {fileID: 1122620971953546952, guid: 99181918675445b49be6ce9d67309b34, type: 3}
   rarity: 0
   dnaReward: 65536
   trivia: A cat's whiskers are navigation tools that detect air currents and width
     changes. Purring isn't just for happiness; the frequency promotes bone density
     and healing. Adult cats only meow to communicate with humans, not other cats.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

@@ -21,3 +21,10 @@ MonoBehaviour:
     (over 1,700 words) of any bird. The color of the cere (nose area) usually indicates
     their gender: blue for males, brown/white for females. They are highly social
     and live in large flocks.'
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

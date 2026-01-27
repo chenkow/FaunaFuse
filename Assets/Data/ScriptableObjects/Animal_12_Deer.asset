@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 12
   animalName: Deer
-  icon: {fileID: 0}
+  icon: {fileID: 5882543636364112519, guid: 9c9044d6b6d1f3c4e9a6b7e9090bb97c, type: 3}
   rarity: 0
   dnaReward: 4096
   trivia: Antlers are the fastest-growing bone tissue in the world. While herbivores,
     deer have been seen chewing on bones for calcium. A buck's antler size is a strong
     indicator of its health and genetic quality to potential mates.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

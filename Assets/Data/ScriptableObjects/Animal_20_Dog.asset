@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 20
   animalName: Dog
-  icon: {fileID: 0}
+  icon: {fileID: -6085793664531533885, guid: 285129c7787425d4388a0058492a01ef, type: 3}
   rarity: 0
   dnaReward: 1048576
   trivia: A dog's nose print is as unique as a human fingerprint. Their sense of
     smell is 10,000-100,000 times more sensitive than ours, smelling in '3D'. The
     'puppy dog eyes' look is an evolutionary adaptation to communicate with humans.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: During hibernation, bears do not urinate; their bodies recycle waste into
     protein to maintain muscle. Despite their bulk, they can sprint faster than Usain
     Bolt (up to 55 km/h). Polar bears can smell a seal from 30 km away.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

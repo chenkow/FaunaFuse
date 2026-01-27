@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 7
   animalName: Snake
-  icon: {fileID: 0}
+  icon: {fileID: 1908284950484850189, guid: 67eb9abb68aa2964a8c617c1ca663c08, type: 3}
   rarity: 0
   dnaReward: 128
   trivia: Cobras spread their neck ribs to form a hood as a threat display. King
     Cobras are the only snakes that build nests for their eggs. Some species can
     spit venom accurately into the eyes of a threat, causing temporary blindness.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 17
   animalName: Owl
-  icon: {fileID: 0}
+  icon: {fileID: -580394220456592876, guid: 4c66fd5f09152ed478872b1e0fdeae65, type: 3}
   rarity: 0
   dnaReward: 131072
   trivia: Owls fly silently thanks to specialized fringed feathers that break up
     turbulence. Their eyes are tube-shaped and fixed in place, so they must rotate
     their heads up to 270 degrees to look around. Their asymmetrical ears allow 3D
     audio triangulation.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

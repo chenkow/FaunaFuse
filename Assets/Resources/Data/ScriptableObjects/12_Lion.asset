@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Antlers are the fastest-growing bone tissue in the world. While herbivores,
     deer have been seen chewing on bones for calcium. A buck's antler size is a strong
     indicator of its health and genetic quality to potential mates.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

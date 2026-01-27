@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 4
   animalName: Rabbit
-  icon: {fileID: 0}
+  icon: {fileID: -7495891045765332494, guid: 75d80670d61bedc40bab83b346ec3a3e, type: 3}
   rarity: 0
   dnaReward: 16
   trivia: Rabbits eat their own droppings (cecotropes) to absorb missed nutrients.
     They have panoramic vision to spot predators but have a blind spot right in front
     of their nose. When sensing danger, they thump their powerful hind legs on the
     ground to warn others.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

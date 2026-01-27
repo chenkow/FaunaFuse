@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Eagles have vision 4-8 times sharper than humans, spotting prey from miles
     away. They build the largest tree nests of any bird, some weighing over a ton.
     They have a second eyelid (nictitating membrane) to protect their eyes.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

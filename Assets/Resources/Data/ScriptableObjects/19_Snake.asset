@@ -21,3 +21,10 @@ MonoBehaviour:
     They are actually very clean; they wallow in mud only to cool down (no sweat
     glands) and for sun protection. Their squeals can be louder than a jet engine
     (115 dB).
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

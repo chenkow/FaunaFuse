@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 9
   animalName: Turtle
-  icon: {fileID: 0}
+  icon: {fileID: 2395816769455667467, guid: ea8ab5bbc3767b74d8c85669175f1775, type: 3}
   rarity: 0
   dnaReward: 512
   trivia: Sea turtles use the Earth's magnetic field to navigate thousands of miles
     back to their birth beach. Unlike cartoons, turtles cannot leave their shells;
     the shell is fused to their spine. Some species can absorb oxygen through their
     cloaca (butt) to stay submerged longer.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

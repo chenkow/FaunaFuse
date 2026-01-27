@@ -28,9 +28,9 @@ public class CurrencyDisplayWirer : MonoBehaviour
         }
 
         // Configure Each
-        ConfigureDisplay("HeartDisplay", uiManager.heartText, heartSprite);
-        ConfigureDisplay("DNADisplay", uiManager.dnaText, dnaSprite);
-        ConfigureDisplay("DiamondDisplay", uiManager.diamondText, diamondSprite);
+        ConfigureDisplay("HeartDisplay", uiManager.heartStackText, heartSprite);
+        ConfigureDisplay("DNADisplay", uiManager.dnaStackText, dnaSprite);
+        ConfigureDisplay("DiamondDisplay", uiManager.diamondStackText, diamondSprite);
 
         Debug.Log("Currency Displays Wired Successfully!");
     }

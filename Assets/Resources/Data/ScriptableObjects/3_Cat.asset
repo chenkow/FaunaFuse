@@ -21,3 +21,10 @@ MonoBehaviour:
     countless trees. They can survive falls from almost any height by using their
     tail for balance and air resistance. They also pretend to bury nuts to fool thieves
     watching them.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

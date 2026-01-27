@@ -21,3 +21,10 @@ MonoBehaviour:
     are just huge. Their tongues are 45-50cm long and dark purple to prevent sunburn
     while eating. They have incredibly high blood pressure to pump blood up to their
     heads.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

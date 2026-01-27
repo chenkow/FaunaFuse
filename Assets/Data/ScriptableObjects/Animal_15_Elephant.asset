@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 15
   animalName: Elephant
-  icon: {fileID: 0}
+  icon: {fileID: 5042532580150785209, guid: 3b7bb0d1ce5252e4ea95a75774e5816c, type: 3}
   rarity: 0
   dnaReward: 32768
   trivia: Elephants have over 40,000 muscles in their trunks, allowing them to pick
     up a single peanut. Their large ears act as radiators to cool their blood. They
     are known for their incredible memory and deep social bonds, even mourning their
     dead.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

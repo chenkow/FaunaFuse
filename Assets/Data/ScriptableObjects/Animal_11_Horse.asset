@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 11
   animalName: Horse
-  icon: {fileID: 0}
+  icon: {fileID: -6262155960167338173, guid: c647c87e438d84744a1ceb06a6ae5b6c, type: 3}
   rarity: 0
   dnaReward: 2048
   trivia: Horses can sleep standing up to be ready to flee predators, thanks to a
     'stay apparatus' in their legs. They have near 360-degree vision. Unlike humans,
     horses physically cannot vomit due to a strong valve in their stomach.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

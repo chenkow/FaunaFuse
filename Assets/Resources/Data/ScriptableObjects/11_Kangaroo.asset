@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Horses can sleep standing up to be ready to flee predators, thanks to a
     'stay apparatus' in their legs. They have near 360-degree vision. Unlike humans,
     horses physically cannot vomit due to a strong valve in their stomach.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

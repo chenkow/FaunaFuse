@@ -21,3 +21,10 @@ MonoBehaviour:
     and recognize their owners. They don't have eyelids, so they sleep with their
     eyes open by staying still. In proper conditions, they can live up to 40 years,
     making them one of the longest-lived aquarium pets.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

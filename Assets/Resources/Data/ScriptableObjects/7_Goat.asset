@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Cobras spread their neck ribs to form a hood as a threat display. King
     Cobras are the only snakes that build nests for their eggs. Some species can
     spit venom accurately into the eyes of a threat, causing temporary blindness.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

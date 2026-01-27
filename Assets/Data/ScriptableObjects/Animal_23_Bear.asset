@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 23
   animalName: Bear
-  icon: {fileID: 0}
+  icon: {fileID: 5409366238054885554, guid: e72248722717539478917eb6dae3bbda, type: 3}
   rarity: 0
   dnaReward: 8388608
   trivia: During hibernation, bears do not urinate; their bodies recycle waste into
     protein to maintain muscle. Despite their bulk, they can sprint faster than Usain
     Bolt (up to 55 km/h). Polar bears can smell a seal from 30 km away.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

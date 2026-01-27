@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 19
   animalName: Pig
-  icon: {fileID: 0}
+  icon: {fileID: 5333343626815202519, guid: 974764353ccf003428d56b66832c986b, type: 3}
   rarity: 0
   dnaReward: 524288
   trivia: Pigs are highly intelligent, outperforming dogs in some cognitive tests.
     They are actually very clean; they wallow in mud only to cool down (no sweat
     glands) and for sun protection. Their squeals can be louder than a jet engine
     (115 dB).
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

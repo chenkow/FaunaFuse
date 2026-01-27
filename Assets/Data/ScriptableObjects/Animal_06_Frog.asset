@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 6
   animalName: Frog
-  icon: {fileID: 0}
+  icon: {fileID: 4087100314139219378, guid: 66e7f1869b006be49bfefd5a0e0ecc05, type: 3}
   rarity: 0
   dnaReward: 64
   trivia: Frogs drink water through their skin via osmosis rather than their mouths.
     They use their eyeballs to help swallow food by retracting them into their head
     to push food down. Their tongues can snap out at prey faster than the blink of
     an eye.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

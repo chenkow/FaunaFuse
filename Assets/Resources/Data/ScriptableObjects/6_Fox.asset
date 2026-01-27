@@ -21,3 +21,10 @@ MonoBehaviour:
     They use their eyeballs to help swallow food by retracting them into their head
     to push food down. Their tongues can snap out at prey faster than the blink of
     an eye.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

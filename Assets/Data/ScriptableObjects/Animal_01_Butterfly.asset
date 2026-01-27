@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 1
   animalName: Butterfly
-  icon: {fileID: 0}
+  icon: {fileID: -4027507800974173533, guid: 303591656b4f8164793f532abe061e39, type: 3}
   rarity: 0
   dnaReward: 2
   trivia: Butterflies taste food with their feet to find suitable plants for eggs.
     Their compound eyes can see ultraviolet (UV) light invisible to humans. Their
     wings are actually transparent; the colors come from microscopic scales reflecting
     light. Monarchs undertake a multi-generational migration of over 4,000 km.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

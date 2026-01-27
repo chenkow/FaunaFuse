@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Wolves howl to assemble the pack and define territory; the harmonics creating
     an illusion of a larger pack. They are endurance hunters, traveling 50+ miles
     a day. All wolf pups are born with blue eyes which change color later.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

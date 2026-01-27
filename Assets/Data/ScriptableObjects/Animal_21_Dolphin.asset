@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 21
   animalName: Dolphin
-  icon: {fileID: 0}
+  icon: {fileID: 6575516240301160044, guid: d3381e01f71d1764fb37989cac580ab9, type: 3}
   rarity: 0
   dnaReward: 2097152
   trivia: Dolphins shut down only half their brain at a time to sleep, staying alert
     for breathing and danger. They have unique 'signature whistles' that function
     like names. They use echolocation (biological sonar) to 'see' with sound.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

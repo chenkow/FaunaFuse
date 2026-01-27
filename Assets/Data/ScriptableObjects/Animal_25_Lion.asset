@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 25
   animalName: Lion
-  icon: {fileID: 0}
+  icon: {fileID: -8282226581714423283, guid: 0176d24a29bffd74eadd1d340ab8581b, type: 3}
   rarity: 0
   dnaReward: 33554432
   trivia: Lions live in savannas, not jungles. Females do 90% of the hunting, while
     males protect the pride's territory. A lion's roar is the loudest of any big
     cat and can be heard from 8 kilometers (5 miles) away.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

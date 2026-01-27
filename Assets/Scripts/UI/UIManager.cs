@@ -8,12 +8,21 @@ namespace UI
         public static UIManager Instance { get; private set; }
         
         [Header("Top Bar")]
-        public TextMeshProUGUI dnaText;
-        public TextMeshProUGUI diamondText;
-        public TextMeshProUGUI heartText;
-        public TextMeshProUGUI scoreText; 
+        public TextMeshProUGUI scoreText;
+        public TextMeshProUGUI scoreUnderlayText; // Underlay text for score shadow effect
         public TextMeshProUGUI topHighScoreText; // Added for In-Game High Score
-        public TextMeshProUGUI heartTimerText;
+        
+        [Header("Resource Stack Texts")]
+        public TextMeshProUGUI diamondStackText;
+        public TextMeshProUGUI diamondStackUnderlayText;
+        public TextMeshProUGUI dnaStackText;
+        public TextMeshProUGUI dnaStackUnderlayText;
+        public TextMeshProUGUI heartStackText;
+        public TextMeshProUGUI heartStackUnderlayText;
+        
+        [Header("Profile Overlay")]
+        public TextMeshProUGUI bestScoreStackText;
+        public TextMeshProUGUI bestScoreStackUnderlayText;
 
         [Header("Test Buttons")]
         public UnityEngine.UI.Button testDnaButton;
@@ -22,6 +31,7 @@ namespace UI
         [Header("Gameplay Controls")]
         public UnityEngine.UI.Button undoButton; // Added for Undo
         public TextMeshProUGUI undoCountText; // Added for Undo Count Display
+        public TextMeshProUGUI undoCountUnderlayText; // Underlay text for undo shadow effect
         public UnityEngine.UI.Button restartButton; // Added for Restart
 
         [Header("Game Over")]
@@ -49,7 +59,9 @@ namespace UI
 
         public void UpdateScore(int score) 
         {
-            if (scoreText) scoreText.text = $"Current Score: {score}";
+            string scoreString = $"Score: {score}";
+            if (scoreText) scoreText.text = scoreString;
+            if (scoreUnderlayText) scoreUnderlayText.text = scoreString;
             // Check High Score Live
             int best = PlayerPrefs.GetInt("HighScore", 0);
             if(score > best) UpdateHighScore(score);
@@ -57,7 +69,10 @@ namespace UI
 
         public void UpdateHighScore(int best)
         {
-            if (topHighScoreText) topHighScoreText.text = $"High Score: {best}";
+            string bestScoreString = $"Best: {best}";
+            if (topHighScoreText) topHighScoreText.text = bestScoreString;
+            if (bestScoreStackText) bestScoreStackText.text = bestScoreString;
+            if (bestScoreStackUnderlayText) bestScoreStackUnderlayText.text = bestScoreString;
         }
 
         public void ShowGameOver(int score, int highScore, int earnedDna, int totalDna)
@@ -114,41 +129,73 @@ namespace UI
 
         private void UpdateDNA(int amount)
         {
-            if (dnaText) dnaText.text = $"{amount}";
+            string dnaValue = $"{amount}";
+            if (dnaStackText) dnaStackText.text = dnaValue;
+            if (dnaStackUnderlayText) dnaStackUnderlayText.text = dnaValue;
         }
 
         private void UpdateDiamonds(int amount)
         {
-            if (diamondText) diamondText.text = $"{amount}";
+            string diamondValue = $"{amount}";
+            if (diamondStackText) diamondStackText.text = diamondValue;
+            if (diamondStackUnderlayText) diamondStackUnderlayText.text = diamondValue;
         }
 
         private void UpdateHearts()
         {
-            if (heartText && Systems.HeartSystem.Instance)
-                heartText.text = $"{Systems.HeartSystem.Instance.CurrentHearts}/{Systems.HeartSystem.MAX_HEARTS}";
+            UpdateHeartDisplay();
+        }
+
+        private void UpdateHeartDisplay()
+        {
+            if (Systems.HeartSystem.Instance == null) return;
+            
+            string heartValue;
+            int currentHearts = Systems.HeartSystem.Instance.CurrentHearts;
+            
+            if (currentHearts > 0)
+            {
+                // Show heart count: "X/5"
+                heartValue = $"{currentHearts}/{Systems.HeartSystem.MAX_HEARTS}";
+            }
+            else
+            {
+                // Show timer when no hearts left
+                var time = Systems.HeartSystem.Instance.GetTimeRemaining();
+                if (time.TotalSeconds > 0)
+                    heartValue = $"{time.Minutes:D2}:{time.Seconds:D2}";
+                else
+                    heartValue = $"0/{Systems.HeartSystem.MAX_HEARTS}";
+            }
+            
+            if (heartStackText) heartStackText.text = heartValue;
+            if (heartStackUnderlayText) heartStackUnderlayText.text = heartValue;
         }
 
         private void Update()
         {
-            if (Systems.HeartSystem.Instance && heartTimerText)
+            // Update heart display every frame when hearts are depleted (for timer)
+            if (Systems.HeartSystem.Instance != null && Systems.HeartSystem.Instance.CurrentHearts == 0)
             {
-                var time = Systems.HeartSystem.Instance.GetTimeRemaining();
-                if (time.TotalSeconds > 0)
-                    heartTimerText.text = $"{time.Minutes:D2}:{time.Seconds:D2}";
-                else
-                    heartTimerText.text = "";
+                UpdateHeartDisplay();
             }
         }
         public void UpdateUndoCount(int remaining, int total = 0)
         {
             // Hide undo UI completely when no undos available (upgrade not purchased)
             bool hasUndoUpgrade = total > 0;
+            string undoText = $"{remaining}/{total}";
             
             if (undoButton) undoButton.gameObject.SetActive(hasUndoUpgrade);
             if (undoCountText) 
             {
                 undoCountText.gameObject.SetActive(hasUndoUpgrade);
-                if (hasUndoUpgrade) undoCountText.text = $"{remaining}/{total}";
+                if (hasUndoUpgrade) undoCountText.text = undoText;
+            }
+            if (undoCountUnderlayText)
+            {
+                undoCountUnderlayText.gameObject.SetActive(hasUndoUpgrade);
+                if (hasUndoUpgrade) undoCountUnderlayText.text = undoText;
             }
         }
     }

@@ -21,3 +21,10 @@ MonoBehaviour:
     have the densest fur of any animal (up to 1 million hairs per sq inch) to stay
     warm. They are one of the few animals that use tools, using rocks to crack open
     clams.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

@@ -54,14 +54,23 @@ namespace Core
                 if (iconRenderer)
                 {
                     iconRenderer.sprite = Data.icon;
-                    // Icon itself stays strictly at 1.0 (or normalized to fit)
-                    // relative to the Parent Tile.
-                    iconRenderer.transform.localScale = Vector3.one; 
                     
                     if(Data.icon) {
-                         Vector3 bounds = iconRenderer.localBounds.size;
+                         // Calculate scale to fit sprite in tile
+                         Vector3 bounds = iconRenderer.sprite.bounds.size;
                          float max = Mathf.Max(bounds.x, bounds.y);
-                         if(max > 0) iconRenderer.transform.localScale = Vector3.one * (1f / max);
+                         float scale = (max > 0) ? (1f / max) : 1f;
+                         iconRenderer.transform.localScale = Vector3.one * scale;
+                         
+                         // Compensate for pivot offset: sprite.bounds.center gives the offset
+                         // from the pivot point to the visual center of the sprite
+                         Vector3 pivotOffset = iconRenderer.sprite.bounds.center * scale;
+                         iconRenderer.transform.localPosition = -pivotOffset;
+                    }
+                    else
+                    {
+                         iconRenderer.transform.localScale = Vector3.one;
+                         iconRenderer.transform.localPosition = Vector3.zero;
                     }
                 }
                 

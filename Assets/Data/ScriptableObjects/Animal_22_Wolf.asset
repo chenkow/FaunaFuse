@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 22
   animalName: Wolf
-  icon: {fileID: 0}
+  icon: {fileID: 8741742846402055208, guid: 74be174aebf4556468a3937955294b61, type: 3}
   rarity: 0
   dnaReward: 4194304
   trivia: Wolves howl to assemble the pack and define territory; the harmonics creating
     an illusion of a larger pack. They are endurance hunters, traveling 50+ miles
     a day. All wolf pups are born with blue eyes which change color later.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

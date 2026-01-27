@@ -20,3 +20,10 @@ MonoBehaviour:
   trivia: Lions live in savannas, not jungles. Females do 90% of the hunting, while
     males protect the pride's territory. A lion's roar is the loudest of any big
     cat and can be heard from 8 kilometers (5 miles) away.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

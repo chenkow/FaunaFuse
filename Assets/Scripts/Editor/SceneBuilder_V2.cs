@@ -120,16 +120,9 @@ namespace Utils
              GameObject topBar = CreatePanel(safeAreaContainer.transform, "TopBar", new Color(0.15f, 0.15f, 0.2f, 1f));
              SetRect(topBar, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0.5f, 1), new Vector2(0, 250), Vector2.zero);
              
-             // DNA TEXT (Left Top)
-             uiManager.dnaText = CreateTextAnchored(topBar.transform, "DNA", "DNA: 0", 
-                 new Vector2(0f, 0.5f), new Vector2(0.33f, 1f), TextAlignmentOptions.Left);
-             uiManager.dnaText.rectTransform.offsetMin = new Vector2(30, 0); 
-             
-             // DIAMOND TEXT (Left Bottom - under DNA)
-             uiManager.diamondText = CreateTextAnchored(topBar.transform, "Diamonds", "Diamond: 0", 
-                 new Vector2(0f, 0f), new Vector2(0.33f, 0.5f), TextAlignmentOptions.Left);
-             uiManager.diamondText.rectTransform.offsetMin = new Vector2(30, 0);
-             uiManager.diamondText.color = new Color(0.4f, 0.8f, 1f); // Light blue/cyan
+             // NOTE: DNA/Diamond/Heart stack texts are now set up manually in the scene 
+             // with Diamond Button, DNA Button, Heart Button hierarchy.
+             // See UIManager.cs for the new field names: diamondStackText, dnaStackText, heartStackText
              
              // CURRENT SCORE (Center Bottom - Pushed Up)
              uiManager.scoreText = CreateTextAnchored(topBar.transform, "Score", "0", 
@@ -143,21 +136,6 @@ namespace Utils
              // Align BOTTOM so it sticks to the center line
              uiManager.topHighScoreText.fontSize = 20;
              uiManager.topHighScoreText.color = new Color(0.9f, 0.9f, 0.5f); // Gold tint
-             
-             // HEARTS TEXT (Right)
-             uiManager.heartText = CreateTextAnchored(topBar.transform, "Hearts", "Hearts: 5", 
-                 new Vector2(0.66f, 0f), new Vector2(1f, 1f), TextAlignmentOptions.Right);
-             // Margin right
-             uiManager.heartText.rectTransform.offsetMax = new Vector2(-30, 0);
-             
-             // Heart Timer (Separate? Or under Hearts? For now let's put it below hearts or just separate)
-             // Let's create it overlaying hearts for now or just small below it. 
-             // Actually user didn't mention position, just "3. text... score". 
-             // Logic suggests timer usually replaces Text or sits beside it.
-             // I'll make a hidden/small text for now anchored right too.
-             uiManager.heartTimerText = CreateTextAnchored(topBar.transform, "Timer", "", 
-                 new Vector2(0.66f, 0f), new Vector2(1f, 0.4f), TextAlignmentOptions.Right);
-             uiManager.heartTimerText.rectTransform.offsetMax = new Vector2(-30, 0);
 
 
              // VIEWS (Panels)

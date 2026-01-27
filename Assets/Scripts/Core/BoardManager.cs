@@ -14,7 +14,8 @@ namespace Core
         public int height = 4;
         [SerializeField] private Tile tilePrefab;
         [SerializeField] private Transform boardContainer; 
-        [SerializeField] private Transform tileLayer; 
+        [SerializeField] private Transform tileLayer;
+        [SerializeField] private Transform slotsParent; // Reference to Slots container
         [SerializeField] private float tileSize = 1.1f; // Defined by SceneBuilder
         [SerializeField] private float padding = 0.02f;
 
@@ -84,16 +85,35 @@ namespace Core
             grid = new Tile[width, height];
             slotPositions = new Vector3[width, height];
 
-            // Re-calculate math to match SceneBuilder
-            float calculatedTotalWidth = (width * tileSize) + ((width - 1) * padding);
-            float calculatedTotalHeight = (height * tileSize) + ((height - 1) * padding);
-            Vector3 origin = new Vector3(-calculatedTotalWidth / 2 + tileSize / 2, -calculatedTotalHeight / 2 + tileSize / 2, 0);
-
-            for (int x = 0; x < width; x++)
+            // Read actual slot positions from scene GameObjects
+            if (slotsParent != null)
             {
-                for (int y = 0; y < height; y++)
+                foreach (Transform slot in slotsParent)
                 {
-                    slotPositions[x, y] = origin + new Vector3(x * (tileSize + padding), y * (tileSize + padding), 0);
+                    // Parse slot name: Slot_X_Y
+                    string[] parts = slot.name.Split('_');
+                    if (parts.Length >= 3 && int.TryParse(parts[1], out int x) && int.TryParse(parts[2], out int y))
+                    {
+                        if (x >= 0 && x < width && y >= 0 && y < height)
+                        {
+                            slotPositions[x, y] = slot.localPosition;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // Fallback: calculate positions mathematically
+                float calculatedTotalWidth = (width * tileSize) + ((width - 1) * padding);
+                float calculatedTotalHeight = (height * tileSize) + ((height - 1) * padding);
+                Vector3 origin = new Vector3(-calculatedTotalWidth / 2 + tileSize / 2, -calculatedTotalHeight / 2 + tileSize / 2, 0);
+
+                for (int x = 0; x < width; x++)
+                {
+                    for (int y = 0; y < height; y++)
+                    {
+                        slotPositions[x, y] = origin + new Vector3(x * (tileSize + padding), y * (tileSize + padding), 0);
+                    }
                 }
             }
             
