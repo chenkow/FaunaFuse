@@ -67,10 +67,31 @@ public class PrefabFixer : EditorWindow
                 skillUI.button = prefab.GetComponent<UnityEngine.UI.Button>();
                 
                 PrefabUtility.SaveAsPrefabAsset(prefab, skillButtonPath);
-                PrefabUtility.UnloadPrefabContents(prefab);
                 
                 Debug.Log("SkillButton prefab fixed! SkillButtonUI component added.");
             }
+        }
+        
+        // FIX: Tile Prefab Mask Interaction (Gameplay Visibility Fix)
+        string tilePath = "Assets/Prefabs/Tile.prefab";
+        GameObject tileContent = PrefabUtility.LoadPrefabContents(tilePath);
+        if (tileContent)
+        {
+            Transform icon = tileContent.transform.Find("Icon");
+            if (icon)
+            {
+                var sr = icon.GetComponent<SpriteRenderer>();
+                if (sr && sr.maskInteraction != SpriteMaskInteraction.None)
+                {
+                    sr.maskInteraction = SpriteMaskInteraction.None;
+                    Debug.Log("FIXED: Disabled Mask Interaction on Tile Icon to modify visibility.");
+                    
+                    // Also check sorting layer
+                    if(sr.sortingOrder == 0) sr.sortingOrder = 10; // Ensure it's above background
+                }
+            }
+            PrefabUtility.SaveAsPrefabAsset(tileContent, tilePath);
+            PrefabUtility.UnloadPrefabContents(tileContent);
         }
         
         AssetDatabase.Refresh();

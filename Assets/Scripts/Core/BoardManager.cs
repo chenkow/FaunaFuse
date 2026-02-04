@@ -221,6 +221,10 @@ namespace Core
                             // UNLOCK IN COLLECTION
                             if(Systems.CollectionSystem.Instance) 
                                 Systems.CollectionSystem.Instance.UnlockAnimal(nextData.level);
+                            
+                            // CARD REWARD CHANCE
+                            if(Systems.CardRewardSystem.Instance)
+                                Systems.CardRewardSystem.Instance.TryRewardCard(nextData.level);
                                 
                             // --- XP & VAMPIRE SYSTEM HOOK ---
                             Debug.Log($"Merge complete! Checking PerkManager...");

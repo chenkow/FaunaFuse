@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 9
   animalName: Turtle
-  icon: {fileID: -5933438290522597442, guid: e74d6bd1ca1de9746a64d99c3a212a6a, type: 3}
+  icon: {fileID: 851718366178331244, guid: 3d7644a5798dd134ebcbfdb1205bc2eb, type: 3}
+  gallerySprite: {fileID: 3259379642395820154, guid: 31c7204ef12a95e43bf924ae02c50ec6, type: 3}
   rarity: 0
   dnaReward: 512
   trivia: Sea turtles use the Earth's magnetic field to navigate thousands of miles

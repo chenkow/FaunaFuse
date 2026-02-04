@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 11
   animalName: Horse
-  icon: {fileID: 7386630469556108798, guid: 71a962be4a86a344a849a09d8991dac4, type: 3}
+  icon: {fileID: 6036511719472233794, guid: 129137af18be3ce46b8044f9d2e303fe, type: 3}
+  gallerySprite: {fileID: 3918036869304988321, guid: c9a3d47e8e61bfc4aa79cdbc2008b3a0, type: 3}
   rarity: 0
   dnaReward: 2048
   trivia: Horses can sleep standing up to be ready to flee predators, thanks to a

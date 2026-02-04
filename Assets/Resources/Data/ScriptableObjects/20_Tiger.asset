@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 20
   animalName: Dog
-  icon: {fileID: -2721387835547564792, guid: ebdce7e9b2b9cce4b85b0b4cb163098a, type: 3}
+  icon: {fileID: 688671260788826826, guid: 80fbaa4ef5c62914c9b024db91faed51, type: 3}
+  gallerySprite: {fileID: -6501075050758445515, guid: 60250258c8d04894c86c441f46a91522, type: 3}
   rarity: 0
   dnaReward: 1048576
   trivia: A dog's nose print is as unique as a human fingerprint. Their sense of

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 22
   animalName: Wolf
-  icon: {fileID: 3086170844178294494, guid: 923d99ddf791db94e9bb80a040607ef7, type: 3}
+  icon: {fileID: 275039715403153034, guid: 7847762635a970c458700727071a540e, type: 3}
+  gallerySprite: {fileID: 3336257478278479079, guid: f30ad97c332d22349ae8d85ebfaa2528, type: 3}
   rarity: 0
   dnaReward: 4194304
   trivia: Wolves howl to assemble the pack and define territory; the harmonics creating

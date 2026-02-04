@@ -20,6 +20,13 @@ namespace Systems
     }
 
     [System.Serializable]
+    public struct SavedCard
+    {
+        public int animalLevel;
+        public int starCount; // 1-5
+    }
+
+    [System.Serializable]
     public class GameSaveData
     {
         public int dna;
@@ -30,6 +37,7 @@ namespace Systems
         public List<int> upgradeLevels = new List<int>(); // Deprecated (Legacy)
         public List<SavedUpgrade> savedUpgrades = new List<SavedUpgrade>(); // Robust
         public List<ActiveUpgradeTimer> activeUpgradeTimers = new List<ActiveUpgradeTimer>();
+        public List<SavedCard> animalCards = new List<SavedCard>(); // Star cards
     }
 
     public class SaveSystem : MonoBehaviour

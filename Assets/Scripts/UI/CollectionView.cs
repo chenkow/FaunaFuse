@@ -11,7 +11,13 @@ namespace UI
     {
         [Header("UI References")]
         public Transform contentContainer;
-        public CardUI cardPrefab; // Replaces 'slotTemplate'
+        public GalleryTileUI galleryTilePrefab;
+        
+        [Header("Shared Assets")]
+        public Sprite glassSprite;
+        public Sprite starEmpty;
+        public Sprite starFilled;
+        public List<Sprite> rarityBackgrounds; // Order: Common, Uncommon, Rare, Epic, Legendary
 
         [Header("Detail View")]
         public GameObject detailPanel;
@@ -21,7 +27,7 @@ namespace UI
         public TextMeshProUGUI detailTrivia;
         public Button closeButton;
 
-        private List<CardUI> spawnedCards = new List<CardUI>();
+        private List<GalleryTileUI> spawnedTiles = new List<GalleryTileUI>();
 
         private void OnEnable()
         {
@@ -53,37 +59,71 @@ namespace UI
 
         public void RefreshCollection()
         {
-            // Ensure we have data
-            if (BoardManager.Instance == null || BoardManager.Instance.allAnimals == null) return;
-            
-            // Clear old slots
-            foreach (var card in spawnedCards)
+            // Clear old tiles
+            foreach (var tile in spawnedTiles)
             {
-                if(card != null) Destroy(card.gameObject);
+                if(tile != null) Destroy(tile.gameObject);
             }
-            spawnedCards.Clear();
+            spawnedTiles.Clear();
 
-            if (cardPrefab == null) 
+            // Check requirements
+            if (BoardManager.Instance == null || BoardManager.Instance.allAnimals == null) return;
+            if (CardRewardSystem.Instance == null) return;
+            if (galleryTilePrefab == null) 
             {
-                Debug.LogError("CardPrefab is assigned in CollectionView!");
+                Debug.LogError("GalleryTilePrefab not assigned in CollectionView!");
                 return;
             }
 
-            var animals = BoardManager.Instance.allAnimals;
-            var collectionSys = CollectionSystem.Instance;
-
-            foreach (var animal in animals)
+            // Get all earned cards from CardRewardSystem
+            var earnedCards = CardRewardSystem.Instance.EarnedCards;
+            
+            if (earnedCards == null || earnedCards.Count == 0)
             {
-                CardUI newCard = Instantiate(cardPrefab, contentContainer);
-                newCard.gameObject.SetActive(true);
-                newCard.name = $"Card_{animal.animalName}";
-                
-                bool isUnlocked = collectionSys != null && collectionSys.IsUnlocked(animal.level);
-                
-                newCard.Setup(animal, isUnlocked, ShowDetail);
-                
-                spawnedCards.Add(newCard);
+                Debug.Log("[CollectionView] No cards earned yet.");
+                return;
             }
+
+            // Create a tile for EACH earned card
+            foreach (var card in earnedCards)
+            {
+                AnimalSO animal = GetAnimalByLevel(card.animalLevel);
+                if (animal == null) continue;
+
+                GalleryTileUI newTile = Instantiate(galleryTilePrefab, contentContainer);
+                newTile.gameObject.SetActive(true);
+                newTile.name = $"Card_{animal.animalName}_{card.starCount}Star";
+                spawnedTiles.Add(newTile);
+                
+                // Pass shared assets
+                newTile.glassSprite = glassSprite;
+                newTile.starEmpty = starEmpty;
+                newTile.starFilled = starFilled;
+
+                // Get rarity background (use star count - 1 as index: 1★=0, 5★=4)
+                Sprite rarityBg = null;
+                int rarityIndex = card.starCount - 1;
+                if (rarityBackgrounds != null && rarityIndex >= 0 && rarityIndex < rarityBackgrounds.Count)
+                {
+                    rarityBg = rarityBackgrounds[rarityIndex];
+                }
+
+                // Setup tile with card's star count
+                newTile.SetupWithCard(animal, card.starCount, rarityBg);
+            }
+
+            Debug.Log($"[CollectionView] Displayed {earnedCards.Count} cards.");
+        }
+
+        private AnimalSO GetAnimalByLevel(int level)
+        {
+            if (BoardManager.Instance?.allAnimals == null) return null;
+            
+            foreach (var animal in BoardManager.Instance.allAnimals)
+            {
+                if (animal.level == level) return animal;
+            }
+            return null;
         }
     }
 }

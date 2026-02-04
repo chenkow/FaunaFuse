@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 6
   animalName: Frog
-  icon: {fileID: 3788378571362930877, guid: 050e8394bfde3ec479de04aa3a959476, type: 3}
+  icon: {fileID: -2920670233547633516, guid: e26887e563208ce47b98bbdf3c63c746, type: 3}
+  gallerySprite: {fileID: -3232076265911528808, guid: c53817f0a226cbd49a081bd814374173, type: 3}
   rarity: 0
   dnaReward: 64
   trivia: Frogs drink water through their skin via osmosis rather than their mouths.

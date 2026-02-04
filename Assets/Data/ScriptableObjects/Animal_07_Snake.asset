@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 7
   animalName: Snake
-  icon: {fileID: 1908284950484850189, guid: 67eb9abb68aa2964a8c617c1ca663c08, type: 3}
+  icon: {fileID: -6826222416386938525, guid: 50785c2c080cd6943893f2c1bc3236e2, type: 3}
+  gallerySprite: {fileID: -8129284231020818349, guid: 55d045c1356987341a0648bc3646edde, type: 3}
   rarity: 0
   dnaReward: 128
   trivia: Cobras spread their neck ribs to form a hood as a threat display. King

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 16
   animalName: Cat
-  icon: {fileID: 1122620971953546952, guid: 99181918675445b49be6ce9d67309b34, type: 3}
+  icon: {fileID: 4975985756864258848, guid: 64596c08bafee364d96a89632c4698af, type: 3}
+  gallerySprite: {fileID: 1295447829937431708, guid: b4be1b812ac04814cad3b00d2f8ae0c3, type: 3}
   rarity: 0
   dnaReward: 65536
   trivia: A cat's whiskers are navigation tools that detect air currents and width

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 24
   animalName: Eagle
-  icon: {fileID: -2414896628077155759, guid: bb16a0fcb5e911b409c14980af171445, type: 3}
+  icon: {fileID: -8253323469199074186, guid: c635caece2848c9438ad9e145b650ad4, type: 3}
+  gallerySprite: {fileID: -2287240440585125508, guid: 7d8a6465b33c21a488ba2c668ea7b3e1, type: 3}
   rarity: 0
   dnaReward: 16777216
   trivia: Eagles have vision 4-8 times sharper than humans, spotting prey from miles

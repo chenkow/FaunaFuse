@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 10
   animalName: Panda
-  icon: {fileID: 534280199548923782, guid: 4a30c539a7b93be4ea0c1ba0cf2b6b5d, type: 3}
+  icon: {fileID: -232781414642174180, guid: f246139e36c5c6548911370bb08cd3c8, type: 3}
+  gallerySprite: {fileID: -6102658037409182289, guid: 005220c23979fa04db2738b6c81ee3e1, type: 3}
   rarity: 0
   dnaReward: 1024
   trivia: Pandas have a digestive system designed for meat, yet they eat 99% bamboo,

@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 21
   animalName: Baligi
-  icon: {fileID: 4457016022402660731, guid: 00da40c8ad007af4b86322987d5bb514, type: 3}
+  icon: {fileID: 7772835469018027227, guid: 04375b1e99780dd43a1dea467fc408ba, type: 3}
+  gallerySprite: {fileID: 3217766069442247690, guid: bb4b2ba2d62f6f14e8f4f9ba5f5a47e0, type: 3}
+  rarity: 0
   dnaReward: 2097152
   trivia: A level 21 friend.
+  dropRateModifier: 1
+  bonuses:
+    dnaMultiplier: 0
+    expMultiplier: 0
+    dropChanceMultiplier: 0
+    spawnRankBonusChance: 0
+    mergeSkipChance: 0

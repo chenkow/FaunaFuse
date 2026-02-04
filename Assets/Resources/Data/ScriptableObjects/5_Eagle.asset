@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 5
   animalName: Bird
-  icon: {fileID: 8032330116615084439, guid: 4c9f77a0560254543a2391464e5779d3, type: 3}
+  icon: {fileID: 1539693672398434089, guid: c0f1d54834526f549ae4f008a26ede33, type: 3}
+  gallerySprite: {fileID: 5809306955430516600, guid: 7058d403b09f70442ab8dd0ca7770aaa, type: 3}
   rarity: 0
   dnaReward: 32
   trivia: 'Budgies can mimic human speech and hold the record for the largest vocabulary

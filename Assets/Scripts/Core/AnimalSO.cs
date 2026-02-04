@@ -9,7 +9,8 @@ namespace Core
 
         public int level;
         public string animalName;
-        public Sprite icon;
+        public Sprite icon; // Gameplay Sprite (with background)
+        public Sprite gallerySprite; // Gallery Sprite (no background)
         public Rarity rarity;
         public int dnaReward;
         [TextArea] public string trivia;

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 19
   animalName: Pig
-  icon: {fileID: 5333343626815202519, guid: 974764353ccf003428d56b66832c986b, type: 3}
+  icon: {fileID: 8094800666723448078, guid: ae6f87f88240048438dc08f63ac010f1, type: 3}
+  gallerySprite: {fileID: 3379398958746044906, guid: 784263c79659c304e90900dd0ff19ee9, type: 3}
   rarity: 0
   dnaReward: 524288
   trivia: Pigs are highly intelligent, outperforming dogs in some cognitive tests.

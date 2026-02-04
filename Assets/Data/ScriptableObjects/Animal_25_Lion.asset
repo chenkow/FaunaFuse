@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 25
   animalName: Lion
-  icon: {fileID: -8282226581714423283, guid: 0176d24a29bffd74eadd1d340ab8581b, type: 3}
+  icon: {fileID: 5332324198605205565, guid: 061c9626cd3d85e4eb6658dd2e9396db, type: 3}
+  gallerySprite: {fileID: 6777943124246238228, guid: b32a7f8b452b4474da1e0a4ec92044b0, type: 3}
   rarity: 0
   dnaReward: 33554432
   trivia: Lions live in savannas, not jungles. Females do 90% of the hunting, while

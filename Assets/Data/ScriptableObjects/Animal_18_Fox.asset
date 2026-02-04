@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 18
   animalName: Fox
-  icon: {fileID: -5684965852506050347, guid: 8c394fd9fe0303b46b05605b5502c7c5, type: 3}
+  icon: {fileID: -9205746580576072034, guid: 00ec19d48f0e4d24fbd623e6a863acfd, type: 3}
+  gallerySprite: {fileID: 6107524564398786122, guid: 56f0e2f00e71a6042b3e00527be65617, type: 3}
   rarity: 0
   dnaReward: 262144
   trivia: Foxes use the Earth's magnetic field to judge distance when pouncing on

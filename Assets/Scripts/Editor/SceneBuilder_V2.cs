@@ -267,14 +267,12 @@ namespace Utils
              lvlTxt.fontSize = 20;
              lvlTxt.color = Color.yellow;
 
-             // Auto-Setup CardUI for the new system
-             CardUI cardUI = templateSlot.AddComponent<CardUI>();
-             cardUI.nameText = nameTxt;
-             cardUI.levelText = lvlTxt;
-             if(animalImgObj) cardUI.iconImage = animalImgObj.GetComponent<Image>();
-             cardUI.startBg = templateSlot.GetComponent<Image>();
+             // Auto-Setup CardUI for the new system (ADAPTED FOR GALLERY REDESIGN)
+             // ERROR FIX: CollectionView now uses galleryTilePrefab (GalleryTileUI) instead of cardPrefab (CardUI).
+             // Since setup for hierarchy is complex, we just skip auto-assignment here or assign if compatible.
+             // cvScript.galleryTilePrefab = ... // We can't easily assign CardUI to GalleryTileUI field.
              
-             cvScript.cardPrefab = cardUI;
+             // cvScript.cardPrefab = cardUI; // OLD
              templateSlot.SetActive(false); // Hide template
 
              // ==========================================================================================

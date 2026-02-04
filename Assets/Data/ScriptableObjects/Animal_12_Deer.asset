@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 12
   animalName: Deer
-  icon: {fileID: 5882543636364112519, guid: 9c9044d6b6d1f3c4e9a6b7e9090bb97c, type: 3}
+  icon: {fileID: 7135709308236339902, guid: 797ea9315f1d5f6488217c03fe32f216, type: 3}
+  gallerySprite: {fileID: -1619853699027980375, guid: 5089843dbd65b594aa11f0d3be7cb6a7, type: 3}
   rarity: 0
   dnaReward: 4096
   trivia: Antlers are the fastest-growing bone tissue in the world. While herbivores,

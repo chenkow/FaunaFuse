@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 17
   animalName: Owl
-  icon: {fileID: 566619275676436658, guid: c8b900920d3993946b3415bd9b2ef2f2, type: 3}
+  icon: {fileID: -2659058589527431831, guid: 272b5053425444b48b41eaecc94659ac, type: 3}
+  gallerySprite: {fileID: 5579837166424522151, guid: 9cc396e865f71b74580372c17d0a1fdc, type: 3}
   rarity: 0
   dnaReward: 131072
   trivia: Owls fly silently thanks to specialized fringed feathers that break up

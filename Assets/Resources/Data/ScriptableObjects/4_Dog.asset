@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 4
   animalName: Rabbit
-  icon: {fileID: -7730819368937057633, guid: b8b51786d99acab4586b599446c28473, type: 3}
+  icon: {fileID: -5816138137427175306, guid: 5ce5bf52b602e1f469c0481a636a4881, type: 3}
+  gallerySprite: {fileID: -1616230011114150003, guid: 7286826b18d8ef4458e372fce9c18a4e, type: 3}
   rarity: 0
   dnaReward: 16
   trivia: Rabbits eat their own droppings (cecotropes) to absorb missed nutrients.

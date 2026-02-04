@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 15
   animalName: Elephant
-  icon: {fileID: 5042532580150785209, guid: 3b7bb0d1ce5252e4ea95a75774e5816c, type: 3}
+  icon: {fileID: -3013527480193922179, guid: 1bbd00bc52374ce46a9f221efef76713, type: 3}
+  gallerySprite: {fileID: -5587192723810488576, guid: 36e4b9b5fd20a764384a8a2b130ebb03, type: 3}
   rarity: 0
   dnaReward: 32768
   trivia: Elephants have over 40,000 muscles in their trunks, allowing them to pick

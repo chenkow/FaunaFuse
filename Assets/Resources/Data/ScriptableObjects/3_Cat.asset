@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 3
   animalName: Squirrel
-  icon: {fileID: -5742065336863455072, guid: b9b5605abaab4a146b4325043064c28a, type: 3}
+  icon: {fileID: -5867550294261496882, guid: 2ba0d24af24fc664598c4cece5039724, type: 3}
+  gallerySprite: {fileID: -8727246014705543993, guid: 79b02a5fe06adc6478e4c22dfa282152, type: 3}
   rarity: 0
   dnaReward: 8
   trivia: Squirrels forget where they bury millions of nuts, accidentally planting

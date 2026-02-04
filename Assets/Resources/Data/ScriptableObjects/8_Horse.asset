@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 8
   animalName: Otter
-  icon: {fileID: 3103199680585944695, guid: 6459444f67fb57b48b5385e5309be79d, type: 3}
+  icon: {fileID: -5246011522977526942, guid: d6ec8d3e1510a214a821e0db4cc70584, type: 3}
+  gallerySprite: {fileID: -6064041654342653270, guid: d392b37a1edc5d741852420c3429da18, type: 3}
   rarity: 0
   dnaReward: 256
   trivia: Sea otters hold hands while sleeping to keep from drifting apart. They
