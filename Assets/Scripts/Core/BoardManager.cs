@@ -210,6 +210,7 @@ namespace Core
                         AnimalSO nextData = GetAnimalData(tileToMergeWith.Level + 1);
                         if(nextData != null)
                         {
+                            int mergedAnimalLevel = tileToMergeWith.Level; // save BEFORE upgrade
                             tileToMergeWith.Upgrade(nextData);
                             tileToMergeWith.MergedThisTurn = true;
                             
@@ -222,9 +223,9 @@ namespace Core
                             if(Systems.CollectionSystem.Instance) 
                                 Systems.CollectionSystem.Instance.UnlockAnimal(nextData.level);
                             
-                            // CARD REWARD CHANCE
+                            // CARD REWARD CHANCE - reward the merged animal, not the result
                             if(Systems.CardRewardSystem.Instance)
-                                Systems.CardRewardSystem.Instance.TryRewardCard(nextData.level);
+                                Systems.CardRewardSystem.Instance.TryRewardCard(mergedAnimalLevel);
                                 
                             // --- XP & VAMPIRE SYSTEM HOOK ---
                             Debug.Log($"Merge complete! Checking PerkManager...");
