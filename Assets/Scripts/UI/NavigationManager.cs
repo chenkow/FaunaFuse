@@ -35,6 +35,13 @@ namespace UI
         public GameObject scoreBackground; // Score UI (only visible in Play)
         public GameObject undoContainer; // Undo UI (only visible in Play)
 
+        [Header("Scene Backgrounds")]
+        public GameObject ladderBackground;
+        public GameObject galleryBackground;
+        public GameObject playBackground;
+        public GameObject researchBackground;
+        public GameObject storeBackground;
+
         private void Awake()
         {
             if (Instance == null) Instance = this;
@@ -70,6 +77,13 @@ namespace UI
             
             // Undo Container only visible in Play
             if(undoContainer) undoContainer.SetActive(viewToShow == gameplayView);
+
+            // Switch scene backgrounds
+            if(ladderBackground) ladderBackground.SetActive(viewToShow == leaderboardView);
+            if(galleryBackground) galleryBackground.SetActive(viewToShow == collectionView);
+            if(playBackground) playBackground.SetActive(viewToShow == gameplayView);
+            if(researchBackground) researchBackground.SetActive(viewToShow == labView);
+            if(storeBackground) storeBackground.SetActive(viewToShow == shopView);
             
             // Calculate button indices and direction
             int newIndex = GetButtonIndex(viewToShow);
