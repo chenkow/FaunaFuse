@@ -242,7 +242,12 @@ namespace UI
 
         private IEnumerator PlayAnimation()
         {
-            Vector2 startPos = new Vector2(0, 575);
+            // Position relative to top of canvas (below top nav bar)
+            // Canvas pivot is center, so top edge = canvasHeight/2
+            // Offset 200px from top ensures it sits just below the nav bar on all devices
+            float canvasH = ((RectTransform)overlayCanvas.transform).rect.height;
+            float topOffset = 375f; // distance from top of canvas to card center
+            Vector2 startPos = new Vector2(0, canvasH / 2f - topOffset);
             Vector2 endPos = GetGalleryScreenPos();
 
             cardRoot.anchoredPosition = startPos;

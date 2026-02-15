@@ -624,11 +624,11 @@ namespace Utils
              scoreLabel.color = new Color(0.7f, 0.7f, 0.8f); // Light Grey
 
              // Final Score Value (Big but smaller than title)
-             uiManager.finalScoreText = CreateTextAnchored(card.transform, "FinalScore", "0", 
+             uiManager.scoreValueText = CreateTextAnchored(card.transform, "FinalScore", "0", 
                  new Vector2(0, 0.60f), new Vector2(1, 0.72f), TextAlignmentOptions.Center);
-             uiManager.finalScoreText.fontSize = 80; // Decreased from 110
-             uiManager.finalScoreText.fontStyle = FontStyles.Bold;
-             uiManager.finalScoreText.color = Color.white;
+             uiManager.scoreValueText.fontSize = 80; // Decreased from 110
+             uiManager.scoreValueText.fontStyle = FontStyles.Bold;
+             uiManager.scoreValueText.color = Color.white;
              
              // Separator Line
              GameObject sep = CreatePanel(card.transform, "Separator", new Color(1,1,1,0.1f));
@@ -637,23 +637,23 @@ namespace Utils
 
              // Stats Area (High Score & DNA)
              // High Score
-             uiManager.highScoreText = CreateTextAnchored(card.transform, "HighScore", "Best: 1234", 
+             uiManager.bestScoreValueText = CreateTextAnchored(card.transform, "HighScore", "Best: 1234", 
                  new Vector2(0.1f, 0.45f), new Vector2(0.9f, 0.52f), TextAlignmentOptions.Center);
-             uiManager.highScoreText.fontSize = 40;
-             uiManager.highScoreText.color = new Color(0.9f, 0.9f, 0.5f); // Gold tint
+             uiManager.bestScoreValueText.fontSize = 40;
+             uiManager.bestScoreValueText.color = new Color(0.9f, 0.9f, 0.5f); // Gold tint
 
              // Stats Grid (DNA)
              // Earned DNA
-             uiManager.earnedDnaText = CreateTextAnchored(card.transform, "EarnedDNA", "+10 DNA", 
+             uiManager.dnaEarnedValueText = CreateTextAnchored(card.transform, "EarnedDNA", "+10 DNA", 
                  new Vector2(0.1f, 0.35f), new Vector2(0.5f, 0.42f), TextAlignmentOptions.Right);
-             uiManager.earnedDnaText.fontSize = 32;
-             uiManager.earnedDnaText.color = Color.green;
+             uiManager.dnaEarnedValueText.fontSize = 32;
+             uiManager.dnaEarnedValueText.color = Color.green;
 
              // Total DNA
-             uiManager.totalDnaText = CreateTextAnchored(card.transform, "TotalDNA", "Total: 500", 
+             uiManager.totalDnaValueText = CreateTextAnchored(card.transform, "TotalDNA", "Total: 500", 
                  new Vector2(0.55f, 0.35f), new Vector2(0.9f, 0.42f), TextAlignmentOptions.Left);
-             uiManager.totalDnaText.fontSize = 32;
-             uiManager.totalDnaText.color = Color.white;
+             uiManager.totalDnaValueText.fontSize = 32;
+             uiManager.totalDnaValueText.color = Color.white;
 
              // Try Again Button (Rounded)
              Button btn = CreateButton(card.transform, "TryAgain", new Color(0.3f, 0.8f, 0.4f), roundedSprite);

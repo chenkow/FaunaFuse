@@ -36,10 +36,14 @@ namespace UI
 
         [Header("Game Over")]
         public GameObject gameOverPanel;
-        public TextMeshProUGUI finalScoreText;
-        public TextMeshProUGUI highScoreText;
-        public TextMeshProUGUI earnedDnaText;
-        public TextMeshProUGUI totalDnaText;
+        public TextMeshProUGUI scoreValueText;
+        public TextMeshProUGUI scoreValueTextUnderlay;
+        public TextMeshProUGUI bestScoreValueText;
+        public TextMeshProUGUI bestScoreValueTextUnderlay;
+        public TextMeshProUGUI dnaEarnedValueText;
+        public TextMeshProUGUI dnaEarnedValueTextUnderlay;
+        public TextMeshProUGUI totalDnaValueText;
+        public TextMeshProUGUI totalDnaValueTextUnderlay;
         public UnityEngine.UI.Button tryAgainButton;
 
         private void Awake()
@@ -80,10 +84,22 @@ namespace UI
             if(gameOverPanel)
             {
                 gameOverPanel.SetActive(true);
-                if(finalScoreText) finalScoreText.text = $"Score: {score}";
-                if(highScoreText) highScoreText.text = $"High Score: {highScore}";
-                if(earnedDnaText) earnedDnaText.text = $"Earned DNA: +{earnedDna}";
-                if(totalDnaText) totalDnaText.text = $"Total DNA: {totalDna}";
+                
+                string scoreVal = score.ToString("N0");
+                if(scoreValueText) scoreValueText.text = scoreVal;
+                if(scoreValueTextUnderlay) scoreValueTextUnderlay.text = scoreVal;
+                
+                string bestVal = highScore.ToString("N0");
+                if(bestScoreValueText) bestScoreValueText.text = bestVal;
+                if(bestScoreValueTextUnderlay) bestScoreValueTextUnderlay.text = bestVal;
+                
+                string dnaVal = earnedDna.ToString("N0");
+                if(dnaEarnedValueText) dnaEarnedValueText.text = dnaVal;
+                if(dnaEarnedValueTextUnderlay) dnaEarnedValueTextUnderlay.text = dnaVal;
+                
+                string totalVal = totalDna.ToString("N0");
+                if(totalDnaValueText) totalDnaValueText.text = totalVal;
+                if(totalDnaValueTextUnderlay) totalDnaValueTextUnderlay.text = totalVal;
             }
         }
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 28332b44d68c78240a448daea93d72fd
+guid: f30df8c0f1410044d998e14002679c70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8218814296336886307
-    second: Game Over Try Again Button_0
+      213: 844918968048078505
+    second: game_over_try_again_button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Over Try Again Button_0
+      name: game_over_try_again_button_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32aef00be081f0270800000000000000
-      internalID: 8218814296336886307
+      spriteID: 9aece7a2351c9bb00800000000000000
+      internalID: 844918968048078505
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Game Over Try Again Button_0: 8218814296336886307
+      game_over_try_again_button_0: 844918968048078505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
