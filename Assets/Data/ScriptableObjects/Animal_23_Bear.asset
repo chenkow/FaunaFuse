@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 23
   animalName: Bear
-  icon: {fileID: -2433614125610538755, guid: 3a2caa754a0923049be5fbda4b293261, type: 3}
+  icon: {fileID: 5409366238054885554, guid: 1ca3e94995de03441ae5533959dcf040, type: 3}
   gallerySprite: {fileID: 9127551963695705910, guid: a4a236e170009044d97fa76cb20e9d0f, type: 3}
   rarity: 0
   dnaReward: 8388608

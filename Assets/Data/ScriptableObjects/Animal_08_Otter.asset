@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 8
   animalName: Otter
-  icon: {fileID: -5246011522977526942, guid: d6ec8d3e1510a214a821e0db4cc70584, type: 3}
+  icon: {fileID: 4179285565014062963, guid: afc414023f7fdc449bc49c9515f98204, type: 3}
   gallerySprite: {fileID: -6064041654342653270, guid: d392b37a1edc5d741852420c3429da18, type: 3}
   rarity: 0
   dnaReward: 256

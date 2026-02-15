@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 13
   animalName: Giraffe
-  icon: {fileID: -3602363949155906368, guid: 2f89c94645124f6408ee0e6de33399db, type: 3}
+  icon: {fileID: 7898129011147459218, guid: eda6b8437eab7fd4e8f3aeedf542f2d0, type: 3}
   gallerySprite: {fileID: 5949107859890758998, guid: ffd02b6b6f04bbf4c9ac08592a35d243, type: 3}
   rarity: 0
   dnaReward: 8192

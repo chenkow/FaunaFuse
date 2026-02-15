@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 14
   animalName: Gorilla
-  icon: {fileID: 8846541583529546484, guid: 369dcc4a4a554464cbc275a7e7322f0c, type: 3}
+  icon: {fileID: 3282085926238386583, guid: 6e6baad92cb3eeb4d86102cbacae7245, type: 3}
   gallerySprite: {fileID: 7136509594224825861, guid: 42a8fc252ea07034fb2f6a09a4a51f1f, type: 3}
   rarity: 0
   dnaReward: 16384

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 10
   animalName: Panda
-  icon: {fileID: -232781414642174180, guid: f246139e36c5c6548911370bb08cd3c8, type: 3}
+  icon: {fileID: 534280199548923782, guid: d7f64be298d17ac4b9c796ac43f5f258, type: 3}
   gallerySprite: {fileID: -6102658037409182289, guid: 005220c23979fa04db2738b6c81ee3e1, type: 3}
   rarity: 0
   dnaReward: 1024

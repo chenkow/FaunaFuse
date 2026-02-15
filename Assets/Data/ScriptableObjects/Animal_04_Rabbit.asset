@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 4
   animalName: Rabbit
-  icon: {fileID: -5816138137427175306, guid: 5ce5bf52b602e1f469c0481a636a4881, type: 3}
+  icon: {fileID: -7495891045765332494, guid: 4e10d2dfbe54c734aa521ad4d6f11c2f, type: 3}
   gallerySprite: {fileID: -1616230011114150003, guid: 7286826b18d8ef4458e372fce9c18a4e, type: 3}
   rarity: 0
   dnaReward: 16

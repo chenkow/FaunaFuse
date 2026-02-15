@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 2
   animalName: Fish
-  icon: {fileID: 8362303039794823992, guid: fd6983b743db499419a1e883176a06c4, type: 3}
+  icon: {fileID: -958214292315914915, guid: 4433f2dbcf63b044ba75fd754a6dc22e, type: 3}
   gallerySprite: {fileID: 5056022316522414047, guid: 2edc3fa25a1741642b2c356ef2917a1e, type: 3}
   rarity: 0
   dnaReward: 4

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 21
   animalName: Dolphin
-  icon: {fileID: 7772835469018027227, guid: 04375b1e99780dd43a1dea467fc408ba, type: 3}
+  icon: {fileID: 6575516240301160044, guid: 3d53362bd39a92442a54ba4495325ec7, type: 3}
   gallerySprite: {fileID: 3217766069442247690, guid: bb4b2ba2d62f6f14e8f4f9ba5f5a47e0, type: 3}
   rarity: 0
   dnaReward: 2097152

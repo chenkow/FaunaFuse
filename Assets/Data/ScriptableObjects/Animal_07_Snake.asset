@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 7
   animalName: Snake
-  icon: {fileID: -6826222416386938525, guid: 50785c2c080cd6943893f2c1bc3236e2, type: 3}
+  icon: {fileID: 1908284950484850189, guid: 7a210f828d1185146a884bc6e6123544, type: 3}
   gallerySprite: {fileID: -8129284231020818349, guid: 55d045c1356987341a0648bc3646edde, type: 3}
   rarity: 0
   dnaReward: 128

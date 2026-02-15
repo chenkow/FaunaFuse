@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 11
   animalName: Horse
-  icon: {fileID: 6036511719472233794, guid: 129137af18be3ce46b8044f9d2e303fe, type: 3}
+  icon: {fileID: -6262155960167338173, guid: 61e3270ff3cbfb4499627a295a18148f, type: 3}
   gallerySprite: {fileID: 3918036869304988321, guid: c9a3d47e8e61bfc4aa79cdbc2008b3a0, type: 3}
   rarity: 0
   dnaReward: 2048

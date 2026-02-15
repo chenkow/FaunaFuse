@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 6
   animalName: Frog
-  icon: {fileID: -2920670233547633516, guid: e26887e563208ce47b98bbdf3c63c746, type: 3}
+  icon: {fileID: 4087100314139219378, guid: 39a60623d75276a40befcc6f6ef738f8, type: 3}
   gallerySprite: {fileID: -3232076265911528808, guid: c53817f0a226cbd49a081bd814374173, type: 3}
   rarity: 0
   dnaReward: 64

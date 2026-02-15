@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.AnimalSO
   level: 20
   animalName: Dog
-  icon: {fileID: 688671260788826826, guid: 80fbaa4ef5c62914c9b024db91faed51, type: 3}
+  icon: {fileID: -6085793664531533885, guid: ba081aabe89bdac488208e57220f224c, type: 3}
   gallerySprite: {fileID: -6501075050758445515, guid: 60250258c8d04894c86c441f46a91522, type: 3}
   rarity: 0
   dnaReward: 1048576
